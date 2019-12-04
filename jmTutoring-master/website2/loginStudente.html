@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Form HTML/CSS Template - reusable form</title>
+        <link rel="stylesheet" href="css/form.css" >
+    </head>
+    <body>
+		<div id="form-div">
+			<form class="montform" id="reused_form" >
+				<p class="name">
+					<input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
+				</p>
+				<p class="password">
+					<input type="password" type="text" class="feedback-input" required placeholder="Password" id="password" />
+				</p>
+				<div class="submit">
+					<button type="submit" class="button-blue">ACCEDI</button>
+					<div class="ease"></div>
+				</div>
+			</form>
+			<div id="error_message" style="width:100%; height:100%; display:none;">
+				<h4>
+					Errore
+				</h4>
+				Username o password errati!
+			</div>
+		</div>
+    </body>
+</html>
