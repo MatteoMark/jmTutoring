@@ -3,12 +3,13 @@
     <head>
         <title>Contact Form HTML/CSS Template - reusable form</title>
         <link rel="stylesheet" href="css/form.css" >
+		<script src="js/script.js"></script>
     </head>
     <body onload="document.getElementById('signupDiv').style.display = 'none';">
 	
 		<div class="slButtonsDiv">
-			<button id="c_SignupButton" class="chooseSignupButton">Registrati</button>
-			<button id="c_LoginButton" class="chooseLoginButton">Accedi</button>
+			<button id="c_SignupButton" class="chooseSignupButton chooseButtonHover" onclick="animateButton();">Registrati</button>
+			<button id="c_LoginButton" class="chooseLoginButton" onclick="animateButton();">Accedi</button>
 			
 		</div>
 			
@@ -60,25 +61,24 @@
 		</div>
 		
 		
-		
 		<script type="text/javascript"> 
 		document.body.onload = function(){
 			document.getElementById("signupDiv").style.display = "none";
 			document.getElementById("c_LoginButton").style.backgroundColor = "rgba(72,72,72,0.4)";
 		}
-        document.getElementById("c_LoginButton").onclick = function() {   
+        document.getElementById("c_LoginButton").addEventListener('click', function() { 
             document.getElementById("signupDiv").style.display = "none";
 			document.getElementById("loginDiv").style.display = "block";
-			document.getElementById("c_LoginButton").style.backgroundColor = "#3498db";
+			document.getElementById("c_LoginButton").style.backgroundColor = "rgba(72,72,72,0.4)";
 			document.getElementById("c_SignupButton").style.backgroundColor = "transparent";
-        } 
+		});
   
-        document.getElementById("c_SignupButton").onclick = function() {   
+        document.getElementById("c_SignupButton").addEventListener('click', function() { 
             document.getElementById("loginDiv").style.display = "none"; 
 			document.getElementById("signupDiv").style.display = "block"; 
-			document.getElementById("c_SignupButton").style.backgroundColor = "#3498db";
+			document.getElementById("c_SignupButton").style.backgroundColor = "rgba(72,72,72,0.4)";
 			document.getElementById("c_LoginButton").style.backgroundColor = "transparent";  
-        }
+        });
     </script> 
 	
     </body>
