@@ -1,0 +1,14 @@
+FORM REGISTRAZIONE:	
+-Nome e Cognome
+-Codice Fiscale
+-Indirizzo Mail
+-Numero di Telefono
+-Comune e Provincia
+-Password + conferma PW
+
+
+FORM ACCESSO:
+-E-mail
+-Password, mostra password
+-Ho dimenticato le credenziali di accesso
+-Resta connesso
