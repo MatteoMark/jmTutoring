@@ -2,7 +2,6 @@
 button {
 	outline: none !important;
 	border: none;
-	background: transparent;
 }
 
 p{
@@ -14,6 +13,7 @@ p{
 button:hover {
 	cursor: pointer;
 }
+/*
 .container-login100-form-studente {
   width: 100%;
   display: -webkit-box;
@@ -23,13 +23,14 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-.login100-form-btn-tutor {
+}*/
+
+.buttonTutor {/*
   font-family: OpenSans-Bold;
   font-size: 15px;
-  color: #fff;
   line-height: 1.2;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
+  color: #fff;
 
   justify-content: center;
   align-items: center;
@@ -43,12 +44,12 @@ button:hover {
   overflow: hidden;
   background: #141B53;
 }
-.login100-form-btn-studente {
+.buttonStudente {/*
   font-family: OpenSans-Bold;
   font-size: 15px;
-  color: #fff;
   line-height: 1.2;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
+  color: #fff;
   
   justify-content: center;
   padding: 0 20px;
@@ -61,7 +62,8 @@ button:hover {
   overflow: hidden;
   background: #141B53;
 }
-.login100-form-btn-tutor::before {
+/*
+.buttonTutor:before {
   content: "";
   display: block;
   position: absolute;
@@ -74,7 +76,7 @@ button:hover {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
-.login100-form-btn-studente::before {
+.buttonStudente:before {
   content: "";
   display: block;
   position: absolute;
@@ -87,56 +89,47 @@ button:hover {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 }
-.login100-form-btn-tutor:hover {
+*/
+
+.buttonTutor:hover {
   background-color: #0072BB;
 }
-.login100-form-btn-tutor:hover:before {
+.buttonTutor:hover:before {
   opacity: 1;
 }
-.login100-form-btn-studente:hover {
+.buttonStudente:hover {
   background-color: #0072BB;
 }
-.login100-form-btn-studente:hover:before {
+.buttonStudente:hover:before {
   opacity: 1;
 }
 
-/* BODY */
-@font-face {
-  font-family: OpenSans-Regular;
-  src: url('../fonts/OpenSans/OpenSans-Regular.ttf'); 
-}
-
+/*
 @font-face {
   font-family: OpenSans-Bold;
   src: url('../fonts/OpenSans/OpenSans-Bold.ttf'); 
-}
+}  */
 
-* {
-	margin: 0px; 
-	padding: 0px; 
+* {  
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
-
-body, html {
-	height: 100%;
-	font-family: OpenSans-Regular, sans-serif;
-}
-
-/* CONTAINER */
+/*
 .limiter {
   width: 100%;
   margcontainer-login100in: 0 auto;
-}
+}*/
 
 .container-login100 {
   width: 100%;  
-  min-height: 100vh;
+  min-height: 100vh;/*
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
-  display: -ms-flexbox;
+  display: -ms-flexbox;*/
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: center;
   align-items: center;
   padding: 15px;
