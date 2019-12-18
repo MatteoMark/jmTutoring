@@ -22,7 +22,7 @@ body
 	margin-left: -250px;
 }
 
-.form-div {
+.tutorDiv {
 	background-color:rgba(72,72,72,0.4);
 	padding-left:35px;
 	padding-right:35px;
@@ -38,15 +38,50 @@ body
 	border-radius: 0px 0px 10px 10px;
 }
 
+.studenteDiv {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 470px;
+	height: 220px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -250px;
+	border-radius: 10px 10px 10px 10px;
+}
+
 /*
-.form-div:hover{	
+.tutorDiv:hover{	
 	box-shadow: 0 0 40px rgba(33,33,33,.2); 
 }*/
+
+.montform .cognome_nome {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:48%;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+	background-image: url(../images/icons/user.ico);
+	background-size: 25px 25px;
+	background-position: 11px 11px;
+	background-repeat: no-repeat;
+}
 
 .montform .feedback-input {
 	color:#3c3c3c;
 	font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
+    font-weight:500;
 	font-size: 18px;
 	border-radius: 0;
 	line-height: 22px;
@@ -56,6 +91,10 @@ body
 	width:100%;
 	box-sizing: border-box;
 	border: 3px solid rgba(0,0,0,0);
+	background-image: url(../images/icons/user.ico);
+	background-size: 25px 25px;
+	background-position: 11px 11px;
+	background-repeat: no-repeat;
 }
 /*Inputs styles*/
 .montform .feedback-input:focus{
@@ -80,20 +119,6 @@ body
 	background-size: 30px 30px;
 	background-position: 8px 5px;
     background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-.montform  #email{
-	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-.montform  #email:focus{
-	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
-	background-size: 30px 30px;
-  background-position: 11px 8px;
 	background-repeat: no-repeat;
 }
 
@@ -191,7 +216,7 @@ body
 /*Styles for small screens*/
 /*
 @media  only screen and (max-width: 580px) {
-	.form-div{
+	.tutorDiv{
 		left: 3%;
 		margin-right: 3%;
 		width: 200%;
