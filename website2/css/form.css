@@ -59,7 +59,7 @@ body
 	box-shadow: 0 0 40px rgba(33,33,33,.2); 
 }*/
 
-.montform .cognome_nome {
+.inputStyle {
 	color:#3c3c3c;
 	font-family: Helvetica, Arial, sans-serif;
     font-weight:500;
@@ -67,18 +67,16 @@ body
 	border-radius: 0;
 	line-height: 22px;
 	background-color: #fbfbfb;
-	padding: 13px 13px 13px 54px;
 	margin-bottom: 10px;
-	width:48%;
+	padding: 13px 13px 13px 10px;
 	box-sizing: border-box;
 	border: 3px solid rgba(0,0,0,0);
-	background-image: url(../images/icons/user.ico);
 	background-size: 25px 25px;
 	background-position: 11px 11px;
 	background-repeat: no-repeat;
 }
-
-.montform .feedback-input {
+/*
+ .feedback-input {
 	color:#3c3c3c;
 	font-family: Helvetica, Arial, sans-serif;
     font-weight:500;
@@ -97,24 +95,32 @@ body
 	background-repeat: no-repeat;
 }
 /*Inputs styles*/
-.montform .feedback-input:focus{
+.feedback-input:focus{
 	background: #fff;
 	border: 3px solid #3498db;
 	color: #3498db;
 	outline: none;
-  padding: 13px 13px 13px 54px;
+	padding: 13px 13px 13px 54px;
 }
 
 
-/* Icons ---------------------------------- */
-.montform  #password{
+#password{
 	background-image: url(../images/icons/key.svg);
 	background-size: 30px 30px;
 	background-position: 11px 8px;
 	background-repeat: no-repeat;
+	padding: 13px 13px 13px 54px;
 }
 
-.montform  #password:focus{
+#email{
+	background-image: url(../images/icons/mail.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+	padding: 13px 13px 13px 54px;
+}
+
+#password:focus{
 	background-image: url(../images/icons/key.svg);
 	background-size: 30px 30px;
 	background-position: 8px 5px;
@@ -122,22 +128,15 @@ body
 	background-repeat: no-repeat;
 }
 
-.montform  #comment{
-	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-pencil.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-.montform  textarea {
+textarea {
     width: 100%;
     height: 150px;
     line-height: 150%;
     resize:vertical;
 }
 
-.montform  input:hover, .montform  textarea:hover,
-.montform  input:focus, .montform  textarea:focus {
+input:hover,   textarea:hover,
+input:focus,   textarea:focus {
 	background-color:#e6e6e6;
 }
 
@@ -194,7 +193,7 @@ body
     outline:none;
 }
 	
-.montform  .submit:hover {
+.submit:hover {
 	color: #3498db;
 }
 	
