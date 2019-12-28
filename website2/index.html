@@ -9,10 +9,10 @@
 		<div class="container-login100" id="mainDiv">
 				<form class="login100-form validate-form">
 					<div>
-						<button class="buttonStudente" onmouseover="bckgrdChanger('studente');" onmouseleave="mainBck();">
+						<button id="btnStud" class="buttonStudente" onmouseover="bckgrdChanger('studente');" onmouseleave="mainBck();">
 							<p>STUDENTE</p>
 						</button>
-						<button class="buttonTutor" onmouseover="bckgrdChanger('tutor');" onmouseleave="mainBck();">
+						<button id="btnTutor" class="buttonTutor" onmouseover="bckgrdChanger('tutor');" onmouseleave="mainBck();">
 							<p>TUTOR</p>
 						</button>
 				</form>
@@ -28,6 +28,14 @@
 		function mainBck(){
 			document.getElementById('mainDiv').style.backgroundImage = 'url("images/jm.jpg")';
 		}
+		
+        document.getElementById("btnStud").addEventListener('click', function() {
+			window.open('loginStudente.html', '_blank');
+        });
+		
+        document.getElementById("btnTutor").addEventListener('click', function() {
+			window.open('login-onTutor.html', '_blank');
+        });
 </script>
 
 </body>

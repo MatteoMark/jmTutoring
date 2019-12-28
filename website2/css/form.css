@@ -54,11 +54,6 @@ body
 	border-radius: 10px 10px 10px 10px;
 }
 
-/*
-.tutorDiv:hover{	
-	box-shadow: 0 0 40px rgba(33,33,33,.2); 
-}*/
-
 .inputStyle {
 	color:#3c3c3c;
 	font-family: Helvetica, Arial, sans-serif;
@@ -75,26 +70,7 @@ body
 	background-position: 11px 11px;
 	background-repeat: no-repeat;
 }
-/*
- .feedback-input {
-	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
-    font-weight:500;
-	font-size: 18px;
-	border-radius: 0;
-	line-height: 22px;
-	background-color: #fbfbfb;
-	padding: 13px 13px 13px 54px;
-	margin-bottom: 10px;
-	width:100%;
-	box-sizing: border-box;
-	border: 3px solid rgba(0,0,0,0);
-	background-image: url(../images/icons/user.ico);
-	background-size: 25px 25px;
-	background-position: 11px 11px;
-	background-repeat: no-repeat;
-}
-/*Inputs styles*/
+
 .feedback-input:focus{
 	background: #fff;
 	border: 3px solid #3498db;
@@ -157,7 +133,7 @@ input:focus,   textarea:focus {
 	border-radius: 20px;
 }
 
-.slButtons:hover{
+.s:hover{
 	background-color: rgba(0,0,0,0);	
 	color: #0493bd;
 	border: #fbfbfb solid 0px;
