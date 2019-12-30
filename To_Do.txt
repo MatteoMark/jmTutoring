@@ -1,16 +1,14 @@
-FORM REGISTRAZIONE:	
--Nome e Cognome
--Codice Fiscale Gli stranieri hanno il CF???????????
--Indirizzo Mail
--Numero di Telefono
--Comune e Provincia
--Password + conferma PW
+FORM REGISTRAZIONE:
+-Nome e Cognome ok
+-Codice Fiscale ok Gli stranieri hanno il CF???????????
+-Indirizzo Mail ok
+-Numero di Telefono okv
+-Comune e Provincia ok
+-Password + conferma PW ok
 
 
 FORM ACCESSO:
--E-mail
--Password, mostra password
+-E-mail ok
+-Password, mostra password ok
 -Ho dimenticato le credenziali di accesso
 -Resta connesso
-
-Gli stranieri hanno il CF???????????
