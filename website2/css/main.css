@@ -11,6 +11,9 @@ p{
 
 button:hover {
 	cursor: pointer;
+	background-color:  #3493;
+	width: 270px;
+	height: 85px;
 }
 
 .buttonTutor {
@@ -24,6 +27,7 @@ button:hover {
 	border-radius: 12px 12px 12px 12px;
 	overflow: hidden;
 }
+
 .buttonStudente {
 	background-color: #3498db;
 	color: white;
@@ -41,7 +45,7 @@ button:hover {
 	box-sizing: border-box;
 }
 
-.container-login100 {
+.mainDiv {
   width: 100%;  
   min-height: 100vh;
   display: flex;

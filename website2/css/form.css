@@ -16,7 +16,7 @@ body
 	width: 540px;
 	height: 55px;
 	position: fixed;
-	top: 50%;
+	top: 47%;
 	left: 50%;
 	margin-top: -205px;
 	margin-left: -250px;
@@ -28,10 +28,8 @@ body
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
-	width: 470px;
-	height: 220px;
 	position: fixed;
-	top: 50%;
+	top: 47%;
 	left: 50%;
 	margin-top: -150px;
 	margin-left: -250px;
@@ -133,7 +131,7 @@ input:focus,   textarea:focus {
 	border-radius: 20px;
 }
 
-.s:hover{
+.slButtons:hover{
 	background-color: rgba(0,0,0,0);	
 	color: #0493bd;
 	border: #fbfbfb solid 0px;
