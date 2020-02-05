@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login V20</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="mainDiv" id="mainDiv">
+            <form class="login100-form validate-form">
+              <button id="btnStud" class="buttonStudente" onmouseover="bckgrdChanger('studente');" onmouseleave="mainBck();">
+                <p>STUDENTE</p>
+              </button>
+              <button id="btnTutor" class="buttonTutor" onmouseover="bckgrdChanger('tutor');" onmouseleave="mainBck();">
+                <p>TUTOR</p>
+              </button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function bckgrdChanger(name) {
+            document.getElementById('mainDiv').style.backgroundImage = 'url("images/' + name + '.jpg")';
+        }
+
+        function mainBck() {
+            document.getElementById('mainDiv').style.backgroundImage = 'url("images/jm.jpg")';
+        }
+
+        document.getElementById("btnStud").addEventListener('click', function() {
+        	window.open('loginStudente.php', '_blank');
+            //window.location.href = "loginStudente.php";
+        });
+
+        document.getElementById("btnTutor").addEventListener('click', function() {
+        	window.open('login-onTutor.php', '_blank');
+            //window.location.href = "loginStudente.php";
+        });
+    </script>
+
+</body>
+
+</html>
