@@ -1,0 +1,6 @@
+TUTOR(CF, nome, cognome, password, email, indirizzoResidenza, numeroTelefonico, interno,
+descrizione, attivato, statoFormazione)
+STUDENTE(CF, nome, cognome, password, email, indirizzoResidenza, numeroTelefonico, classe)
+RIPETIZIONE(ID, data, idTutor*, idStudente*, idMateria*)
+MATERIA(NOME)
+INSEGNA(NOMEMATERIA*, CODFTUTOR*)
