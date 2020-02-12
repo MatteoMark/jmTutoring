@@ -25,6 +25,7 @@ if (isset($_POST['nome']) && isset($_POST['cognome'])) { //controlla che siano i
 		<script src="js/script.js"></script>
     </head>
     <body>
+	<p align='center' style='color:red;'>Sito in manutenzione, potrebbe non funzionare</p>
 		<div class="slButtonsDiv">
 			<button id="c_SignupButton" class="chooseSignupButton chooseButtonHover" onclick="animateButton();">Registrati</button>
 			<button id="c_LoginButton" class="chooseLoginButton" onclick="animateButton();">Accedi</button>

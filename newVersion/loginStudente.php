@@ -20,6 +20,7 @@ if (isset($_POST['user']) && isset($_POST['pw'])) { //controlla che siano inseri
 </head>
 
 <body>
+	<p align='center' style='color:red;'>Sito in manutenzione, potrebbe non funzionare</p>
     <?php
     if(isset($_GET['err']))
     echo "<p align='center' style='color:red;'>" . $_GET["err"] . "</p>";
