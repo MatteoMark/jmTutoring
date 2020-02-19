@@ -31,7 +31,6 @@ if(!isset($_SESSION['user'])){
 
 <body>
 
-<p align='center' style='color:red;'>Sito in manutenzione, potrebbe non funzionare</p>
 <!-- Add your content of header -->
 <header class="">
   <div class="navbar navbar-default visible-xs">

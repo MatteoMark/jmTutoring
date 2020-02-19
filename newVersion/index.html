@@ -7,14 +7,13 @@
 </head>
 
 <body>
-    <p align='center' style='color:red;'>Sito in manutenzione, potrebbe non funzionare</p>
     <div class="limiter">
         <div class="mainDiv" id="mainDiv">
             <form class="login100-form validate-form">
-                <button id="btnStud" class="buttonStudente" onmouseover="bckgrdChanger('studente');" onmouseleave="mainBck();">
+              <button id="btnStud" class="buttonStudente" onmouseover="bckgrdChanger('studente');" onmouseleave="mainBck();">
                 <p>STUDENTE</p>
               </button>
-                <button id="btnTutor" class="buttonTutor" onmouseover="bckgrdChanger('tutor');" onmouseleave="mainBck();">
+              <button id="btnTutor" class="buttonTutor" onmouseover="bckgrdChanger('tutor');" onmouseleave="mainBck();">
                 <p>TUTOR</p>
               </button>
             </form>
@@ -30,12 +29,12 @@
         }
 
         document.getElementById("btnStud").addEventListener('click', function() {
-            window.open('loginStudente.php', '_blank');
+        	window.open('loginStudente.php', '_blank');
             //window.location.href = "loginStudente.php";
         });
 
         document.getElementById("btnTutor").addEventListener('click', function() {
-            window.open('login-onTutor.php', '_blank');
+        	window.open('signUpTutor.php', '_blank');
             //window.location.href = "loginStudente.php";
         });
     </script>
