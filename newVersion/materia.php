@@ -7,6 +7,13 @@ if(!isset($_SESSION['user'])){
 	header("Location:loginStudente.php?err=$err");
 	exit();
 }
+
+
+
+
+   $sql = "SELECT * FROM materie WHERE nome='".$_GET["materia"]."'";
+   $result = $conn->query($sql);
+
 ?>
 <head>
   <meta charset="UTF-8">
@@ -69,7 +76,7 @@ if(!isset($_SESSION['user'])){
   <div class="col-xs-12 col-md-8">
 
     <div class="section-container-spacer">
-        <h1>Nome Materia</h1>
+        <h1><?php echo $materia["nome"]</h1>
         
     </div>
 
