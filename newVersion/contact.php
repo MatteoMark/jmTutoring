@@ -55,13 +55,13 @@ if(!isset($_SESSION['user'])){
       	?>
       </div>
       <ul class="nav">
-        <li><a href="./index.php" title="">Home</a></li>
+        <li><a href="./studente.php" title="">Home</a></li>
         <li><a href="./services.php" title="">Servizi</a></li>
         <li><a href="./contact.php" title="">Contattaci</a></li>
       </ul>
       <nav class="nav-footer">
        
-		<p>INSTAGRAM</P>
+		<p>INSTAGRAM</p>
 		<p class="nav-footer-social-buttons">
           <a class="fa-icon" href="https://www.instagram.com/" title="">
             <i class="fa fa-instagram"></i>

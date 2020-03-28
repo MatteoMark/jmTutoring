@@ -1,15 +1,19 @@
 <?php
 include "php/dbCreation.php";
-if (isset($_POST['nome']) && isset($_POST['cognome'])) { //controlla che siano inseriti i dati
+if (isset($q_POST['nome']) && isset($_POST['cognome'])) { //controlla che siano inseriti i dati
   if (!empty($_POST['nome']) && !empty($_POST['cognome']) && !empty($_POST['codF']) && !empty($_POST['email']) && !empty($_POST['numeroTel']) && !empty($_POST['Indirizzo']) && !empty($_POST['pw'])) { //controlla che siano inseriti i dati
 	if($_POST['pw'] != $_POST['pwConferma']){
     	echo "<script>alert('Le password devono essere uguali');</script>"; 
     }else{
       //$sql = "INSERT INTO usersTutor (Nome, Cognome, CodiceFiscale, Email, NumeroTelefono, IndirizzoResidenza, Password) VALUES ();"; //query sul db --> prende tutti i dati di utenti con quel nome e password
       //$result = $conn->query($sql); //esegue la query
-      echo "<script>alert('NOME: " . $_POST['nome'] . "');</script>";
-      $stmt = $conn->prepare("INSERT INTO tutor (Nome, Cognome, CodiceFiscale, Email, NumeroTelefono, IndirizzoResidenza, Password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"); //avoid SQL injection
-      $stmt->bind_param("ssssssss", $_POST['nome'], $_POST['cognome'], $_POST['codF'], $_POST['email'], $_POST['numeroTel'], $_POST['Indirizzo'], $_POST['pw']);
+      $pw = md5($_POST['pw']);// cript pw
+      $formazione = "Nessuna formazione";
+      $descrizione = "Nessuna descrizione";
+      $attivato = 0;
+      $interno = 0;
+      $stmt = $conn->prepare("INSERT INTO tutor(CF, nome, cognome, password, email, residenza, telefono, interno, descrizione, attivato, formazione) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"); //avoid SQL injection
+      $stmt->bind_param("sssssssisis", $_POST['codF'], $_POST['nome'], $_POST['cognome'], $pw, $_POST['email'], $_POST['Indirizzo'], $_POST['numeroTel'], $interno, $decrizione, $attivato, $formazione);
       $stmt->execute();
       echo "<script>alert('Registrazione effettuata con successo');</script>";
     }

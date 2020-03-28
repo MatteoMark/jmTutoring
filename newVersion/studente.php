@@ -90,6 +90,27 @@ if(!isset($_SESSION['user'])){
   <div class="gutter-sizer"></div>
     <div class="grid-sizer"></div>
     
+    <?php
+	include "php/dbCreation.php";
+	$query = "SELECT * FROM materie"; // crea una query
+	$result = $conn->query($query); // esegue la query
+    	while ($row = $result->fetch_assoc()) { // prende i risultati
+        echo "<div class='grid-item'>
+                <img class='img-responsive' alt='' src='./assets/images/" . $row['immagine'] . "'>
+                <a href='./materia.php' class='project-description'>
+                  <div class='project-text-holder'>
+                    <div class='project-text-inner'>
+                      <h3>" . strtoupper($row['nome']) . "</h3>
+                      <p style='color:#000000'>" . $row['descrizione'] . "</p>
+                    </div>
+                  </div>
+                </a>
+              </div>";
+		$link = "?idFilm=" . $row['CodFilm']; // init link della pagina corrispondente al singolo film
+		
+	}
+    ?>
+    <!--
     <div class="grid-item">
       <img class="img-responsive" alt="" src="./assets/images/eng.svg">
       <a href="./materia.php" class="project-description">
@@ -187,7 +208,7 @@ if(!isset($_SESSION['user'])){
     
   </div>
 </div>
-
+-->
 
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {

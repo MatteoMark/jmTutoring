@@ -7,13 +7,6 @@ if(!isset($_SESSION['user'])){
 	header("Location:loginStudente.php?err=$err");
 	exit();
 }
-
-
-
-
-   $sql = "SELECT * FROM materie WHERE nome='".$_GET["materia"]."'";
-   $result = $conn->query($sql);
-
 ?>
 <head>
   <meta charset="UTF-8">
@@ -76,7 +69,7 @@ if(!isset($_SESSION['user'])){
   <div class="col-xs-12 col-md-8">
 
     <div class="section-container-spacer">
-        <h1><?php echo $materia["nome"]</h1>
+        <h1>Nome Materia</h1>
         
     </div>
 
@@ -103,5 +96,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 
  <script type="text/javascript" src="./main.85741bff.js"></script></body>
+
+<script>!function(d,l,e,s,c){e=d.createElement("script");e.src="//ad.altervista.org/js.ad/size=2X2/?ref="+encodeURIComponent(l.hostname+l.pathname)+"&r="+Date.now();s=d.scripts;c=d.currentScript||s[s.length-1];c.parentNode.insertBefore(e,c)}(document,location)</script>
 
 </html>
