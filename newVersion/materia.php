@@ -62,6 +62,7 @@ if(!isset($_SESSION['user'])){
     </div> 
   </nav>
 </header>
+
 <main class="" id="main-collapse">
 
 
@@ -69,15 +70,23 @@ if(!isset($_SESSION['user'])){
   <div class="col-xs-12 col-md-8">
 
     <div class="section-container-spacer">
-        <h1>Nome Materia</h1>
+        <h1><?php echo $_GET["Materia"] ?></h1>
         
     </div>
 
     <div class="section-container-spacer">
       
 	  <table id="Tabella">
-	  
-	  
+
+
+      
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+    </table>
     </div>
 
   </div>
