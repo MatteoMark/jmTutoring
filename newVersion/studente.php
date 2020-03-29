@@ -97,7 +97,7 @@ if(!isset($_SESSION['user'])){
     	while ($row = $result->fetch_assoc()) { // prende i risultati
         echo "<div class='grid-item'>
                 <img class='img-responsive' alt='' src='./assets/images/" . $row['immagine'] . "'>
-                <a href='./materia.php' class='project-description'>
+                <a href='./materia.php?Materia=".$row["nome"]."' class='project-description'>
                   <div class='project-text-holder'>
                     <div class='project-text-inner'>
                       <h3>" . strtoupper($row['nome']) . "</h3>
