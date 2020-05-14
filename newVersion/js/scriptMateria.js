@@ -14,6 +14,10 @@ function fillTable() {
 	tabella += "<p style='font-size:18px;'>";
 	tabella+="CLASSE";  
 	tabella += "</p>";
+
+	tabella += "<p style='font-size:18px;'>";
+	tabella+="VALUTAZIONE";  
+	tabella += "</p>";
 	
 	tabella += "</td>";
 	tabella += "<td class='ConfermaStyle'>";
