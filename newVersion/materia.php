@@ -59,6 +59,25 @@ if(!isset($_SESSION['user'])){
         <li><a href="./contact.php" title="">Contatti</a></li>
 
       </ul>
+      
+      <div class="slidecontainer">
+        <form action="">
+          <p>Filtra per valutazione</p>
+          <input type="range" min="1" max="5" value="3" class="slider" id="myRange" name="myRange">
+          <p>Value: <span id="demo"></span></p>
+          <input type="submit" value="Filtra">
+        </form>
+      </div>
+
+      <form action="">
+        <p>Filtra per classe</p>
+        <select name="filtroClassi" id="filtroClassi">
+          <option value=""></option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+        <input type="submit" value="Filtra">
+      </form>
     </div> 
   </nav>
 </header>
