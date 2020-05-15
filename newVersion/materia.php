@@ -26,7 +26,7 @@ if(!isset($_SESSION['user'])){
 
   <title>JmTutoring</title> 
   
-   <script src="js/scriptMateria.js" type="text/javascript"></script>  
+  <script src="js/scriptMateria.js" type="text/javascript"></script>  
 
 <link href="./css/studStyle.css" rel="stylesheet"></head>
 
@@ -61,26 +61,27 @@ if(!isset($_SESSION['user'])){
       </ul>
       
       <!--FILTRI DA RIVEDERE-->
-      <!--slider per filtro valutazione-->
+      
       <div class="slidecontainer">
         <form action="">
+        <!--slider per filtro valutazione-->
           <p>Filtra per valutazione</p>
           <input type="range" min="1" max="5" value="3" class="slider" id="myRange" name="myRange">
-          <p>Value: <span id="demo"></span></p>
-          <input type="submit" value="Filtra">
+          <p>Stelle: <span id="value"></span></p>
+
+          <!--combo box per filtro classe-->
+          <p>Filtra per classe</p>
+          <select name="filtroClassi" id="filtroClassi">
+            <?php
+            
+            ?>
+            <option value="">5CI</option>
+            <option value="">5AI</option>
+            <option value="">4BL</option>
+          </select> <br><br>
+          <input type="submit" value="Filtra" class="slButtons">
         </form>
       </div>
-
-      <!--combo box per filtro classe-->
-      <form action="">
-        <p>Filtra per classe</p>
-        <select name="filtroClassi" id="filtroClassi">
-          <option value=""></option>
-          <option value=""></option>
-          <option value=""></option>
-        </select>
-        <input type="submit" value="Filtra">
-      </form>
     </div> 
   </nav>
 </header>
@@ -126,7 +127,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 
- <script type="text/javascript" src="./main.85741bff.js"></script></body>
+<script type="text/javascript" src="./main.85741bff.js"></script></body>
+<script>
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("value");
+  output.innerHTML = slider.value;
+
+  slider.oninput = function() {
+  output.innerHTML = this.value;
+  }
+</script>
 
 <script>!function(d,l,e,s,c){e=d.createElement("script");e.src="//ad.altervista.org/js.ad/size=2X2/?ref="+encodeURIComponent(l.hostname+l.pathname)+"&r="+Date.now();s=d.scripts;c=d.currentScript||s[s.length-1];c.parentNode.insertBefore(e,c)}(document,location)</script>
 
