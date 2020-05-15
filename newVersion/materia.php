@@ -60,6 +60,8 @@ if(!isset($_SESSION['user'])){
 
       </ul>
       
+      <!--FILTRI DA RIVEDERE-->
+      <!--slider per filtro valutazione-->
       <div class="slidecontainer">
         <form action="">
           <p>Filtra per valutazione</p>
@@ -69,6 +71,7 @@ if(!isset($_SESSION['user'])){
         </form>
       </div>
 
+      <!--combo box per filtro classe-->
       <form action="">
         <p>Filtra per classe</p>
         <select name="filtroClassi" id="filtroClassi">
