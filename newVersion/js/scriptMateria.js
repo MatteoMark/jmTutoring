@@ -2,8 +2,7 @@ function fillTable() {
     
     var tabella = "";
   
-   for(var i=0;i<=10;i++)
-        {
+   for(var i=0;i<=10;i++) {
     tabella += "<tr id='cellaTutor'>";
 	tabella += "<td class='NomeStyle'>";
 	
@@ -26,16 +25,6 @@ function fillTable() {
 	
 	tabella += "</td>";
 	tabella += "</tr>";
-        }
+	}
     document.getElementById("Tabella").innerHTML = tabella;
-}
-
-
-//DEMO: funzione di visualizzazione del valore corrente dello slider
-var slider = document.getElementById("myRange");
-var output = document.getElementById("demo");
-output.innerHTML = slider.value;
-
-slider.oninput = function() {
-  output.innerHTML = this.value;
 }
