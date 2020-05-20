@@ -7,10 +7,6 @@ function fillTable() {
 	tabella += "<td class='NomeStyle'>";
 	
 	tabella += "<p style='font-size:18px;'>";
-	tabella +="NOME COGNOME";  
-	tabella += "</p>";
-	
-	tabella += "<p style='font-size:18px;'>";
 	tabella+="CLASSE";  
 	tabella += "</p>";
 
@@ -27,4 +23,22 @@ function fillTable() {
 	tabella += "</tr>";
 	}
     document.getElementById("Tabella").innerHTML = tabella;
+}
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("value");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+output.innerHTML = this.value;
+}
+
+function displayFilter(){
+	var checkbox = document.getElementById("isInterno");
+	var filtro = document.getElementById("slct");
+
+	if (checkbox.checked == true)
+		filtro.style.display = "block";
+	else
+		filtro.style.display = "none";
 }
